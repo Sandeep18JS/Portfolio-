@@ -1,0 +1,23 @@
+.skills-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+    position: absolute;
+   right: 300px;
+   
+}
+.skills-me {
+    width: 100px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .skills-me:hover {
+    transform: scale(1.1);
+  }

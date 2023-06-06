@@ -1,0 +1,17 @@
+$primary-color: #43beac;
+
+@import 'animate.css';
+
+@font-face {
+  font-family: 'Enoway Regular';
+  src: url('./assets/fonts/enoway-regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+input,
+textarea {
+  font-family:  'Enoway Regular', sans-serif;
+}
+
+
