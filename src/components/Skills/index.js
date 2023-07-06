@@ -10,7 +10,7 @@ import Rreact from '../../assets/images/react.png';
 const Skills = () => {
 
     return (
-        <div className="container skills-page">
+        <div className="container skills-page cl-6">
             <div className="text-zone">
                 <h1>Skills & Experience</h1>
                 <p>
