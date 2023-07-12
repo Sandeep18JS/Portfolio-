@@ -27,14 +27,26 @@
   transform: scale(1.1);
 }
 
-@media (min-width: 1215px) {
+@media (min-width: 1200px) {
   .skills {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 60px;
     justify-items: center;
     align-items: center;
     position: absolute;
-    right: 300px;
+    right: 275px;
   }
 }
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    right: 175px;
+  }
+}
+

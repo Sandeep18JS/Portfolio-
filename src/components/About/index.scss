@@ -1,4 +1,189 @@
 
 
+.letter-image {
+	position: absolute;
+	top: 60%;
+	left: 73%;
+	width: 200px;
+	height: 200px;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
 
- 
+.animated-mail {
+	position: absolute;
+	height: 140px;
+	width: 200px;
+	-webkit-transition: .4s;
+	-moz-transition: .4s;
+	transition: .4s;
+	
+	.body {
+		position: absolute;
+		bottom: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 0 190px 250px;
+		border-color: transparent transparent #181818 transparent;
+		z-index: 2;
+	}
+	
+	.top-fold {
+		position: absolute;
+        bottom: 90px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 100px 120px 0 130px;
+		-webkit-transform-origin: 50% 0%;
+		-webkit-transition: transform .4s .4s, z-index .2s .4s;
+		-moz-transform-origin: 50% 0%;
+		-moz-transition: transform .4s .4s, z-index .2s .4s;
+		transform-origin: 50% 0%;
+		transition: transform .4s .4s, z-index .2s .4s;
+		border-color: #141414 transparent transparent transparent;
+		z-index: 2;
+	}
+	
+	.back-fold {
+		position: absolute;
+		bottom: 0;
+		width: 250px;
+		height: 190px;
+		background: #141414;
+		z-index: 0;
+	}
+	
+	.left-fold {
+		position: absolute;
+		bottom: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 88px 0 100px 136px;
+		border-color: transparent transparent transparent #161616;
+		z-index: 1;
+	}
+	
+	.letter {
+		font-family: 'Enoway Regular';
+		font-weight: 900;
+		letter-spacing: 2px;
+		left: 20px;
+		bottom: 1px;
+		position: absolute;
+		width: 210px;
+		height: 60px;
+		background: white;
+		z-index: 1;
+		overflow: hidden;
+		-webkit-transition: .4s .2s;
+		-moz-transition: .4s .2s;
+		transition: .4s .2s;
+		
+		.letter-border {
+			height: 10px;
+			width: 100%;
+      background: repeating-linear-gradient(
+        -45deg,
+        #1A1A1A,
+        #1A1A1A 8px,
+        transparent 8px,
+        transparent 18px
+      );
+		}
+		
+		.letter-title {
+            font-size: 30px;
+			margin-top: 12px;
+			margin-left: 53px;
+			height: 30px;
+			width: 40%;
+			color: #1A1A1A;
+		}
+		.letter-context {
+            font-size: 15px;
+			margin-top: 25px;
+			margin-left: 69px;
+			height: 30px;
+		
+			color: #1A1A1A;
+		}
+	
+		
+		
+	}
+}
+
+.shadow {
+	position: absolute;
+	top: 200px;
+	left: 65%;
+	width: 400px;
+	height: 30px;
+	transition: .4s;
+	transform: translateX(-50%);
+	-webkit-transition: .4s;
+	-webkit-transform: translateX(-50%);
+	-moz-transition: .4s;
+	-moz-transform: translateX(-50%);
+	
+	border-radius: 100%;
+	background: radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.0), rgba(0,0,0,0.0));
+}
+
+	.letter-image:hover {
+		.animated-mail {
+			transform: translateY(50px);
+			-webkit-transform: translateY(50px);
+			-moz-transform: translateY(50px);
+		}
+		
+		.animated-mail .top-fold {
+			transition: transform .4s, z-index .2s;
+			transform: rotateX(180deg);
+			-webkit-transition: transform .4s, z-index .2s;
+			-webkit-transform: rotateX(180deg);
+			-moz-transition: transform .4s, z-index .2s;
+			-moz-transform: rotateX(180deg);
+			z-index: 0;
+		}
+		
+		.animated-mail .letter {
+			height: 280px;
+		}
+		
+		.shadow {
+			width: 250px;
+		}
+	}
+
+	
+	  @media (max-width: 1200px) {
+		.letter-image {
+		  position: absolute;
+		  top: 180%;
+		  left: 50%;
+		  width: 250px;
+		  height: 200px;
+		  transform: translate(-50%, -50%);
+		  cursor: pointer;
+		}
+		.shadow {
+			left: 50%;
+		}	 
+	  }	  
+	  @media (max-width: 650px) {
+		.letter-image {
+		  position: absolute;
+		  top: 150%;
+		  left: 50%;
+		  width: 250px;
+		  height: 200px;
+		  transform: translate(-50%, -50%);
+		  cursor: pointer;
+		}
+	}

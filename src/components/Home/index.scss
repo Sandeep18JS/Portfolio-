@@ -65,7 +65,7 @@
   }
   
   
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1000px) {
     .tags,
     .home-page h1:before,
     .home-page h1:after {
@@ -83,7 +83,6 @@
     .home-page .flat-button {
       float: none;
       display: block;
-      margin: 20px auto 0 auto;
       width: 124px;
     }
   }
@@ -95,4 +94,19 @@
     left: 40%;
    
     background-color: transparent;
+    
+   
+  @media screen and (max-width: 700px) {
+    width: 110%;
+ left: -5%;
   }
+
+  @media screen and (max-width: 1000px) {
+    width: 140%;
+ left: -22%;
+  }
+    
+
+  }
+
+ 
