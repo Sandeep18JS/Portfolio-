@@ -1,5 +1,5 @@
 import './index.scss'
-import Resume from '../../assets/images/resume.pdf';
+import Resume from '../../assets/images/sandeepRES7.pdf';
 
 
 
