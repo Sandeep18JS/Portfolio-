@@ -7,32 +7,32 @@ import weather from '../../assets/images/weather.png';
 const Projects = () => {
   // Sample project data
   const projects = [
-    {
+        {
       id: 1,
-      title: 'Career Portal',
-      description: " Created a Career Portal with Python, Flask, and SQL. It allows job seekers to explore opportunities, submit resumes, and connect with employers. The portal includes user registration, job listing, and search features.",
-      thumbnail: careers,
-      link: 'https://careers-2.onrender.com/'
+      title: 'Paws of India',
+      description: "Developed PawsofIndia.com website with a Full Stack approach, utilizing React, Tailwind CSS ,HTML. Created a platform for dog enthusiasts, featuring Indian dog breed profiles, care content, and an adoption section.",
+      thumbnail: PawsofIndia,
+      link: 'https://paws-of-india.vercel.app/'
     },
     {
       id: 2,
-      title: 'Weather App',
-      description: "Created a React weather app that fetches and displays weather data from an API in a user-friendly interface. It provides accurate and up-to-date weather information to keep users informed.",
-      thumbnail: weather,
-      link: ''
+      title: 'RoomMates',
+      description: " Developed an intuitive Roommates-MERN platform using React, Node.js, HTML, and CSS for seamless roommate management and expense tracking.",
+      thumbnail: Roommates,
+      link: 'https://mern-roommates-kcbb.vercel.app/'
     },
-    {
+        {
       id: 3,
-      title: 'Loading',
-      description: "",
-      thumbnail: '',
+      title: 'Book Store ',
+      description: "Developed a user-friendly Book Store using the MERN stack, creating an intuitive interface for book exploration and purchase.",
+      thumbnail: Bookstore,
       link: ''
     },
     {
       id: 4,
-      title: 'Loading',
-      description: "",
-      thumbnail: '',
+      title: 'Weather App',
+      description: "Created a React weather app that fetches and displays weather data from an API in a user-friendly interface. It provides accurate and up-to-date weather information to keep users informed.",
+      thumbnail: weather,
       link: ''
     },
   ];
