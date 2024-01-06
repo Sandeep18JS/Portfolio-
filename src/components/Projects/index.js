@@ -2,6 +2,7 @@ import React from 'react';
 import './index.scss';
 import roommates from '../../assets/images/roommates.png';
 import weather from '../../assets/images/weather.png';
+import bookstore from '../../assets/images/bookstore.png';
 import pawsofindia from '../../assets/images/pawsofindia.png';
 
 
@@ -27,7 +28,7 @@ const Projects = () => {
       id: 3,
       title: 'Book Store ',
       description: "Developed a user-friendly Book Store using the MERN stack, creating an intuitive interface for book exploration and purchase.",
-      thumbnail: Bookstore,
+      thumbnail: bookstore,
       link: ''
     },
     {
