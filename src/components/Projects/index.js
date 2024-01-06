@@ -1,7 +1,9 @@
 import React from 'react';
 import './index.scss';
-import careers from '../../assets/images/careers.png';
+import roommates from '../../assets/images/roommates.png';
 import weather from '../../assets/images/weather.png';
+import pawsofindia from '../../assets/images/pawsofindia.png';
+
 
 
 const Projects = () => {
@@ -11,14 +13,14 @@ const Projects = () => {
       id: 1,
       title: 'Paws of India',
       description: "Developed PawsofIndia.com website with a Full Stack approach, utilizing React, Tailwind CSS ,HTML. Created a platform for dog enthusiasts, featuring Indian dog breed profiles, care content, and an adoption section.",
-      thumbnail: PawsofIndia,
+      thumbnail: pawsofindia,
       link: 'https://paws-of-india.vercel.app/'
     },
     {
       id: 2,
       title: 'RoomMates',
       description: " Developed an intuitive Roommates-MERN platform using React, Node.js, HTML, and CSS for seamless roommate management and expense tracking.",
-      thumbnail: Roommates,
+      thumbnail: roommates,
       link: 'https://mern-roommates-kcbb.vercel.app/'
     },
         {
